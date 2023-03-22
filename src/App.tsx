@@ -1,16 +1,17 @@
 import { CssBaseline, ThemeProvider } from '@mui/material'
+import Topbar from './scenes/global/Topbar'
 import { ColorModeContext, useMode } from './theme/theme'
 
 function App() {
   const [theme, colorMode] = useMode()
-  console.log('theme', theme)
+  // console.log('theme', theme)
   // theme: {
   // breakpoints: {keys: Array(5), values: {…}, up: ƒ, down: ƒ, between: ƒ, …}
   // components: {}
   // direction: "ltr"
   // mixins: {toolbar: {…}}
   // palette: {mode: 'dark', primary: {…}, secondary: {…}, neutral: {…}, background: {…}, …}
-  console.log('colorMode', colorMode)
+  // console.log('colorMode', colorMode)
   // {toggleColorMode: ƒ}
 
   return (
@@ -18,19 +19,7 @@ function App() {
       <ThemeProvider theme={theme}>
         <CssBaseline />
         <div className='app'>
-          <header className='App-header'>
-            <p>
-              Edit <code>src/App.tsx</code> and save to reload.
-            </p>
-            <a
-              className='App-link'
-              href='https://reactjs.org'
-              target='_blank'
-              rel='noopener noreferrer'
-            >
-              Learn React
-            </a>
-          </header>
+          <Topbar />
           <main className='content'>Content</main>
         </div>
       </ThemeProvider>
