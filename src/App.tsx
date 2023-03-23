@@ -32,9 +32,9 @@ function App() {
       <ThemeProvider theme={theme}>
         <CssBaseline />
         <div className='app'>
+          <Sidebar />
           <main className='content'>
             <Topbar />
-            <Sidebar />
             <Routes>
               <Route path='/' element={<Dashboard />} />
               <Route path='/team' element={<Team />} />
