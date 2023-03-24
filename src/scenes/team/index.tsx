@@ -50,7 +50,6 @@ const Team = () => {
       field: 'email',
       headerName: 'Email',
       headerAlign: 'center' as const, // !
-
       flex: 1,
       minWidth: 160,
     },
