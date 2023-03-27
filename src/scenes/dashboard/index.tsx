@@ -56,13 +56,22 @@ const Dashboard = () => {
       {/* GRID & CHARTS */}
       <Box
         display='grid'
-        gridTemplateColumns='repeat(12, 1fr)'
+        gridTemplateColumns='repeat(auto-fit, minmax(160px, 1fr))'
+        // gridTemplateColumns='repeat(auto-fill, 1fr)'
+        // gridTemplateColumns='repeat(12, minmax(25px, 1fr))'
+        // gridTemplateColumns='repeat(12, minmax(30px, 1fr))'
+        // gridTemplateColumns='repeat(auto-fit, minmax(100px, 1fr))'
+        //
+        // gridTemplateColumns='repeat(auto-fit, minmax(80px, 1fr))'
+        // gridTemplateColumns='repeat(auto-fit, minmax(30px, 1fr))'
+        // gridTemplateColumns='repeat(12, 1fr)'
         gridAutoRows='150px'
         gap='20px'
+        marginBottom='20px'
       >
         {/* ROW 1 - 1 */}
         <Box
-          gridColumn='span 3'
+          // gridColumn='span 3'
           // gridColumn='span 2'
           display='flex'
           // flexDirection={isNonMobile ? 'row' : 'column'}
@@ -92,7 +101,7 @@ const Dashboard = () => {
         </Box>
         {/* ROW 1 - 2 */}
         <Box
-          gridColumn='span 3'
+          // gridColumn='span 3'
           // gridColumn='span 2'
           display='flex'
           alignItems='center'
@@ -118,7 +127,7 @@ const Dashboard = () => {
         </Box>
         {/* ROW 1 - 3 */}
         <Box
-          gridColumn='span 3'
+          // gridColumn='span 3'
           // gridColumn='span 2'
           display='flex'
           alignItems='center'
@@ -144,7 +153,7 @@ const Dashboard = () => {
         </Box>
         {/* ROW 1 - 4 */}
         <Box
-          gridColumn='span 3'
+          // gridColumn='span 3'
           // gridColumn='span 2'
           display='flex'
           alignItems='center'
@@ -168,9 +177,18 @@ const Dashboard = () => {
             }
           />
         </Box>
-        {/* ROW 2 - 1 */}
+      </Box>
+
+      {/* ROW 2 - 1 */}
+      <Box
+        display='grid'
+        gridTemplateColumns='repeat(auto-fit, minmax(260px, 1fr))'
+        gridAutoRows='150px'
+        gap='20px'
+        marginBottom='20px'
+      >
         <Box
-          gridColumn='span 8' // width
+          // gridColumn='span 8' // width
           gridRow='span 2' // height
           sx={{
             backgroundColor: colors.primary[400],
@@ -216,7 +234,7 @@ const Dashboard = () => {
         {/* ROW 2 - 2 */}
         {/* TRANSACTIONS */}
         <Box
-          gridColumn='span 4'
+          // gridColumn='span 4'
           // gridColumn='span 8'
           gridRow='span 2'
           sx={{
@@ -295,10 +313,20 @@ const Dashboard = () => {
             </Box>
           ))}
         </Box>
-        {/* // TODO: split into components rows? */}
-        {/* ROW 3 - 1 */}
+      </Box>
+
+      {/* // TODO: split into components rows? */}
+      {/* ROW 3 - 1 */}
+      <Box
+        display='grid'
+        // gridTemplateColumns='repeat(auto-fill, 1fr)'
+        gridTemplateColumns='repeat(auto-fit, minmax(260px, 1fr))'
+        gridAutoRows='150px'
+        gap='20px'
+        marginBottom='20px'
+      >
         <Box
-          gridColumn='span 4'
+          // gridColumn='span 4'
           gridRow='span 2'
           p='30px'
           sx={{
@@ -331,7 +359,7 @@ const Dashboard = () => {
         </Box>
         {/* ROW 3 - 2 */}
         <Box
-          gridColumn='span 4'
+          // gridColumn='span 4'
           gridRow='span 2'
           sx={{
             backgroundColor: colors.primary[400],
@@ -353,7 +381,7 @@ const Dashboard = () => {
         </Box>
         {/* ROW 3 - 3 */}
         <Box
-          gridColumn='span 4'
+          // gridColumn='span 4'
           gridRow='span 2'
           sx={{
             backgroundColor: colors.primary[400],

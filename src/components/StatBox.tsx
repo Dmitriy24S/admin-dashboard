@@ -17,9 +17,6 @@ const StatBox = ({ title, subtitle, icon, progress, increase }: IProps) => {
   const isNonMobile = useMediaQuery('(min-width: 1000px)')
 
   return (
-    // <Box width='100%' m='0 30px' p='20px' height='100%'>
-    // <Box width='100%' m='0 30px' p='20px'>
-    // <Box width='100%' m='0 30px' p='20px'>
     <Box
       width='100%'
       p='20px'
@@ -28,8 +25,8 @@ const StatBox = ({ title, subtitle, icon, progress, increase }: IProps) => {
       gap='10px'
       justifyContent='space-between'
       height='100%'
+      // minWidth='200px'
     >
-      {/* // ! no padding ? mess up downte hz height hz */}
       <Box
         display='flex'
         justifyContent='space-between'
