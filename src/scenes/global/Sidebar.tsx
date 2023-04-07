@@ -56,6 +56,9 @@ const Sidebar = () => {
   return (
     <Box
       sx={{
+        '& .pro-sidebar': {
+          transition: 'none',
+        },
         '& .pro-sidebar-inner': {
           backgroundColor: `${colors.primary[400]} !important`,
         },
